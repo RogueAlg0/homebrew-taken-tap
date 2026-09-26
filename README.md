@@ -1,16 +1,16 @@
-# RogueAlg0's Homebrew tap
+# Homebrew tap for `taken`
 
 ## Install
 
 ```sh
-brew tap roguealg0/tap
+brew tap roguealg0/taken-tap
 brew install taken
 ```
 
 or one-shot:
 
 ```sh
-brew install roguealg0/tap/taken
+brew install roguealg0/taken-tap/taken
 ```
 
 `taken` checks whether a GitHub issue is already taken before you volunteer
