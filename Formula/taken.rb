@@ -3,8 +3,8 @@ class Taken < Formula
 
   desc "Check if a GitHub issue is taken before volunteering for it"
   homepage "https://github.com/RogueAlg0/taken"
-  url "https://files.pythonhosted.org/packages/86/6a/276563b4e66bc05b918a03e429765df045a543a9990bf536e1073ec15a37/taken_gh-0.7.2.tar.gz"
-  sha256 "2f011f8584b47b6fac099fd13be2dd7a9ae6aec6e2ba972a8f9a5d48bd2a1a78"
+  url "https://files.pythonhosted.org/packages/72/32/5d75285c6386c27521b549060278163a1ea74acb2eb3109bf6bf3f2a8cae/taken_gh-0.7.3.tar.gz"
+  sha256 "f7d9c9c2dc24f0e0b22af65e66a69fc87865eaa4660701f4c71f54215c709801"
   license "MIT"
 
   depends_on "python@3.13"
@@ -19,6 +19,6 @@ class Taken < Formula
   end
 
   test do
-    assert_match "taken 0.7.2", shell_output("#{bin}/taken --version")
+    assert_match "taken 0.7.3", shell_output("#{bin}/taken --version")
   end
 end
