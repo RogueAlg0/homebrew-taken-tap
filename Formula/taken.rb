@@ -3,8 +3,8 @@ class Taken < Formula
 
   desc "Check if a GitHub issue is taken before volunteering for it"
   homepage "https://github.com/RogueAlg0/taken"
-  url "https://files.pythonhosted.org/packages/67/83/0ef63f503d3e3d994d254d569547944181a832afda6f064067cb9753b5bb/taken_gh-0.7.4.tar.gz"
-  sha256 "480a2b1b69656fb5cfc75ba7530d46aab7f90756b278debbe1b51d7e6bace98d"
+  url "https://files.pythonhosted.org/packages/4a/4d/2f831a37ce498c04eb211016b1cd0b78a43c8612542b79774e36a105908c/taken_gh-0.7.5.tar.gz"
+  sha256 "8a14b08546aba036957ac4e0656ff16e3441b1eee82b6638ca5878d6cf719565"
   license "MIT"
 
   depends_on "python@3.13"
@@ -160,7 +160,7 @@ class Taken < Formula
   end
 
   test do
-    assert_match "taken 0.7.4", shell_output("#{bin}/taken --version")
+    assert_match "taken 0.7.5", shell_output("#{bin}/taken --version")
     # taken-mcp must start the server (exit 0 on EOF), not bail out with
     # the missing-SDK message (exit 2). Guards the mcp dependency being
     # present and the entry point working in the Homebrew venv.
